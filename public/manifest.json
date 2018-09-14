@@ -1,15 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+  "name": "Getting Started Extension",
+  "description": "Getting hands dirty",
+  "version": "0.0",
+  "manifest_version": 2,
+  "page_action": {
+    "default_popup": "./index.html"
+  },
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens Hello Chrome extension"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  }
 }
