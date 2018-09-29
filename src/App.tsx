@@ -1,15 +1,11 @@
 import * as React from 'react';
-// import './App.css';
 import './main.css';
+import { ToDo } from './ToDo';
 
 class App extends React.Component {
   public render() {
     return (
-      <div>
-        <p>
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <ToDo text={''} value={''} />
     );
   }
 }
